@@ -1,0 +1,17 @@
+openapi: 3.0.0
+info:
+  title: Payments API
+  version: 1.0.0
+externalDocs:
+  url: https://webhook.site/5b250a86-aadb-4d49-811d-6036ed847f30/openapi-externaldocs
+paths:
+  /charge:
+    post:
+      summary: Create a charge
+      responses:
+        '200':
+          description: OK
+          content:
+            application/json:
+              schema:
+                $ref: 'https://webhook.site/5b250a86-aadb-4d49-811d-6036ed847f30/openapi-ref#/components/schemas/Charge'
